@@ -11,4 +11,6 @@
   background-size: cover;
   background-position: top;
   height: 95vh;
+  /* Triangle Clip */
+  clip-path: polygon(50% 0, 100% 100%, 0 100%, 0 100%);
 }
