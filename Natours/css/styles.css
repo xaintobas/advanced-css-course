@@ -42,6 +42,7 @@ body {
 .heading-primary {
   color: white;
   text-transform: uppercase;
+  backface-visibility: hidden;
 }
 
 .heading-primary-main {
@@ -49,21 +50,49 @@ body {
   letter-spacing: 3.5rem;
   font-size: 6rem;
   font-weight: 400;
+  animation: moveInLeft 2s ease-in-out;
 }
 
 .heading-primary-sub {
   font-size: 2rem;
   font-weight: 400;
   letter-spacing: 1.7rem;
+  display: block;
+  animation: moveInRight 2s ease-in-out;
 }
 
 
+/* Animations */
 
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
 
+  80% {
+    transform: translateX(10px);
+  }
 
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
 
+  80% {
+    transform: translateX(-10px);
+  }
 
-
-
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 
