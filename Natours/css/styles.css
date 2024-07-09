@@ -6,6 +6,13 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
+body {
+  padding: 2rem;
+}
 .header {
   background-image: linear-gradient(to right, rgba(0, 128, 0, 0.521), rgba(144, 238, 144, 0.548)), url(../img/hero.jpg) ;
   background-size: cover;
@@ -18,17 +25,37 @@
 .logo-box {
   position: absolute;
   top: 40px;
-  left: 40px;
-  
+  left: 40px;  
 }
 
 .logo {
   height: 35px;
 }
 
+.text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
+.heading-primary {
+  color: white;
+  text-transform: uppercase;
+}
 
+.heading-primary-main {
+  display: block;
+  letter-spacing: 3.5rem;
+  font-size: 6rem;
+  font-weight: 400;
+}
 
+.heading-primary-sub {
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 1.7rem;
+}
 
 
 
