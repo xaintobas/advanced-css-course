@@ -24,12 +24,12 @@ body {
 
 .logo-box {
   position: absolute;
-  top: 40px;
-  left: 40px;  
+  top: 4rem;
+  left: 4rem;  
 }
 
 .logo {
-  height: 35px;
+  height: 3.5rem;
 }
 
 .text-box {
@@ -69,11 +69,11 @@ body {
 @keyframes moveInLeft {
   0% {
     opacity: 0;
-    transform: translateX(-100px);
+    transform: translateX(-10rem);
   }
 
   80% {
-    transform: translateX(10px);
+    transform: translateX(1rem);
   }
 
   100% {
@@ -85,11 +85,11 @@ body {
 @keyframes moveInRight {
   0% {
     opacity: 0;
-    transform: translateX(100px);
+    transform: translateX(10rem);
   }
 
   80% {
-    transform: translateX(-10px);
+    transform: translateX(-1rem);
   }
 
   100% {
@@ -101,7 +101,7 @@ body {
 @keyframes moveInBottom {
   0% {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(3rem);
   }
   
   100% {
@@ -125,13 +125,13 @@ body {
 } 
 
 .btn:hover {
-  transform: translateY(-5px);
+  transform: translateY(-.5rem);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.452);
 }
 
 .btn:active {
-  transform: translateY(2px);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.452);
+  transform: translateY(.2rem);
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.452);
 }
 
 .btn-white {
@@ -165,18 +165,3 @@ body {
   animation: moveInBottom .5s ease-out 1s;
   animation-fill-mode: backwards;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
