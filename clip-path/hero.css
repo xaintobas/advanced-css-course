@@ -23,17 +23,17 @@ body {
 
 /* Logo */
 
-.logo-box {
+.header__logo-box {
   padding: 2rem;
 }
 
-.logo {
+.header__logo {
   width: 10rem;
 }
 
 /* Heading */
 
-.header-text {
+.header__header-text {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -48,14 +48,14 @@ body {
   margin-bottom: 6rem;
 }
 
-.heading-primary-main {
+.heading-primary--main {
   font-size: 8rem;
   display: block;
   letter-spacing: 4rem;
   animation: moveInLeft 1s ease-out;
 }
 
-.heading-primary-sub {
+.heading-primary--sub {
   display: block;
   margin: 2rem 0;
   letter-spacing: 2rem;
@@ -111,7 +111,7 @@ body {
 
 /* Button */ 
 
-.btn-animated {
+.btn--animated {
   animation: moveInBottom 1s ease-out 1S;
   animation-fill-mode: backwards;
 }
@@ -129,7 +129,7 @@ body {
   position: relative;
 }
 
-.btn-white {
+.btn--white {
   background-color: white;
   color: grey;
 }
@@ -157,7 +157,7 @@ body {
   transition: all .5s;
 }
 
-.btn-white:hover::after {
+.btn--white:hover::after {
   background-color: white;
   transform: scale(1.7);
   opacity: 0;
