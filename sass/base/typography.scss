@@ -1,0 +1,31 @@
+body {
+  padding: 2rem;
+  color: $color-grey-dark;
+  line-height: 1.7;
+  padding: 3rem;
+  font-weight: 400;
+  font-family: 'Lato', sans-serif;
+}
+
+.heading-primary {
+  color: $color-white;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 6rem;
+
+  &--main {
+    display: block;
+    letter-spacing: 3.5rem;
+    font-size: 6rem;
+    font-weight: 400;
+    animation: moveInLeft 2s ease-in-out;
+  }
+  
+  &--sub {
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 1.7rem;
+    display: block;
+    animation: moveInRight 2s ease-in-out;
+  }
+}

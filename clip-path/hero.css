@@ -22,7 +22,6 @@ body {
 }
 
 /* Logo */
-
 .header__logo-box {
   padding: 2rem;
 }
@@ -32,7 +31,6 @@ body {
 }
 
 /* Heading */
-
 .header__header-text {
   position: absolute;
   top: 50%;
@@ -63,59 +61,47 @@ body {
 }
 
 /* Annimations */
-
 @keyframes moveInRight {
   0% {
     opacity: 0;
     transform: translateX(10rem);
   }
-
   80% {
     transform: translateX(-2rem);
   }
-
   100% {
     opacity: 1;
     transform: translateX(0);
   }
 }
-
 @keyframes moveInLeft {
   0% {
     opacity: 0;
     transform: translateX(-10rem);
   }
-
   80% {
     transform: translateX(2rem);
   }
-
   100% {
     opacity: 1;
     transform: translateX(0);
   }
 }
-
 @keyframes moveInBottom {
   0% {
     opacity: 0;
     transform: translateY(10rem);
   }
-
   100% {
     opacity: 1;
     transform: translateY(0);
   }
 }
-
-
-/* Button */ 
-
+/* Button */
 .btn--animated {
-  animation: moveInBottom 1s ease-out 1S;
+  animation: moveInBottom 1s ease-out 1s;
   animation-fill-mode: backwards;
 }
-
 
 .btn:link,
 .btn:visited {
@@ -125,7 +111,7 @@ body {
   padding: 2rem 3rem;
   display: inline-block;
   border-radius: 10rem;
-  transition: all .1s;
+  transition: all 0.1s;
   position: relative;
 }
 
@@ -136,12 +122,12 @@ body {
 
 .btn:hover {
   box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.516);
-  transform: translateY(-.5rem);
+  transform: translateY(-0.5rem);
 }
 
 .btn:active {
-  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.516);
-  transform: translateY(-.2rem);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.516);
+  transform: translateY(-0.2rem);
 }
 
 .btn::after {
@@ -154,7 +140,7 @@ body {
   left: 0;
   border-radius: 10rem;
   z-index: -1;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
 .btn--white:hover::after {
@@ -163,11 +149,4 @@ body {
   opacity: 0;
 }
 
-
-
-
-
-
-
-
-
+/*# sourceMappingURL=hero.css.map */

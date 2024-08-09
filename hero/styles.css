@@ -1,0 +1,152 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  padding: 2rem;
+}
+
+.header {
+  background-image: linear-gradient(to right, rgba(0, 128, 0, 0.513), rgba(144, 238, 144, 0.33)), url(../natours/img/hero.jpg);
+  background-size: cover;
+  background-position: top;
+  height: 95vh;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+}
+
+/* Logo */
+.header__logo-box {
+  padding: 2rem;
+}
+
+.header__logo {
+  width: 10rem;
+}
+
+/* Heading */
+.header__header-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  text-align: center;
+}
+
+.heading-primary {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 6rem;
+}
+
+.heading-primary--main {
+  font-size: 8rem;
+  display: block;
+  letter-spacing: 4rem;
+  animation: moveInLeft 1s ease-out;
+}
+
+.heading-primary--sub {
+  display: block;
+  margin: 2rem 0;
+  letter-spacing: 2rem;
+  animation: moveInRight 1s ease-out;
+}
+
+/* Annimations */
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  80% {
+    transform: translateX(-2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  80% {
+    transform: translateX(2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(10rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Button */
+.btn--animated {
+  animation: moveInBottom 1s ease-out 1s;
+  animation-fill-mode: backwards;
+}
+
+.btn:link,
+.btn:visited {
+  font-size: 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 2rem 3rem;
+  display: inline-block;
+  border-radius: 10rem;
+  transition: all 0.1s;
+  position: relative;
+}
+
+.btn--white {
+  background-color: white;
+  color: grey;
+}
+
+.btn:hover {
+  box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.516);
+  transform: translateY(-0.5rem);
+}
+
+.btn:active {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.516);
+  transform: translateY(-0.2rem);
+}
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10rem;
+  z-index: -1;
+  transition: all 0.5s;
+}
+
+.btn--white:hover::after {
+  background-color: white;
+  transform: scale(1.7);
+  opacity: 0;
+}
+
+/*# sourceMappingURL=hero.css.map */
